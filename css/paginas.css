@@ -3,11 +3,11 @@
     margin: 0%;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-body{
+#body{
     display: grid;
     grid-template-rows: auto,1fr,auto;
     min-height: 100vh;
-}
+    }
 /*animaiones*/
 .titulo:hover{
     transform: scale(1.1, 1.1);
@@ -16,22 +16,22 @@ body{
      
  }
  .logo:hover{
-     transform: scale(2.2, 2.2);
+     transform: scale(1.2, 1.2);
      transition: all 2s linear;
  }
- a:hover{
+ li> a:hover{
      color: #bb1818;
  }
 
  /*animaiones fin*/
 
 /*header*/
-.header{
+body> header{
     background-color: rgb(24, 24, 24);
 
 }
 
-.menu{
+ nav> ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -39,29 +39,40 @@ body{
     text-decoration: none;
     background-color: #0000004c;
     list-style-type: none;
+    margin-bottom: 0%;
 }
 
- .titulo{
-    color: antiquewhite;
+div> h1{
+    color: rgb(250, 235, 215);
     font-size: 2em;
     transition: all 3s linear;
     border-bottom: 2px solid rgb(246, 136, 233);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
-    .divisor{
+    nav> div{
         display: flex; flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-a{
+li> a{
     align-content: center;
     color: rgb(248, 248, 253);
     text-decoration: none;
     list-style-type: none;
  }
+ #p{
+     display: flex;
+     justify-content: center;
+
+ }
 /*fin header*/
 
 /*main*/
+.gc{
+    display: flex;
+    justify-content: center;
+}
 .grid__item{
     display: flex;
     font-size: 1.5rem;
@@ -86,7 +97,7 @@ a{
 }
 main{
     background-color: burlywood;
-    height: 1000px;
+    height: 1200px;
     }
     .cards{
         display: grid;
@@ -158,11 +169,11 @@ picture{
 /*fin main*/
         
                /* footer */
-.foot{
+footer> h3{
     color: maroon;
 }
 
-.foote{
+#footer{
     display: flex; flex-direction: row;
     justify-content: space-evenly;
     font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(231, 231, 241);
@@ -173,12 +184,12 @@ picture{
     margin-bottom: 40px;
     }
 
-    .cinta__fondo{
+    #cinta{
         background-image: url(../images/cinta-fondo.png);
         height: 30px;
 
     }
-    .parrafo{
+    footer> p{
      color: #f9f3f3;
      
     }
