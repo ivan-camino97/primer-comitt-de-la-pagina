@@ -3,13 +3,17 @@
     margin: 0%;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-#body{
+body{
     display: grid;
     grid-template-rows: auto,1fr,auto;
     min-height: 100vh;
     }
+    
+    div{
+        display: none;
+    }
 /*animaiones*/
-.titulo:hover{
+h1:hover{
     transform: scale(1.1, 1.1);
      transition: all 3s linear;
      color: rgb(77, 149, 237);
@@ -26,9 +30,13 @@
  /*animaiones fin*/
 
 /*header*/
-body> header{
+header{
     background-color: rgb(24, 24, 24);
+    display: block;
 
+}
+*, ::after, ::before {
+    box-sizing: inherit;
 }
 
  nav> ul{
@@ -41,13 +49,27 @@ body> header{
     list-style-type: none;
     margin-bottom: 0%;
 }
+li{
+    display: flexbox;
+    text-align: none;
+}
+ul{
+    margin-block-start: none;
+    margin-block-end: none;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+    padding-inline-start: 0%;
+    padding-left: 0%;
+}
 
-div> h1{
+
+h1{
     color: rgb(250, 235, 215);
     font-size: 2em;
     transition: all 3s linear;
     border-bottom: 2px solid rgb(246, 136, 233);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     }
     
     nav> div{
@@ -169,8 +191,10 @@ picture{
 /*fin main*/
         
                /* footer */
-footer> h3{
+ h3{
     color: maroon;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 #footer{
