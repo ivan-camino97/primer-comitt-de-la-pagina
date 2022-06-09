@@ -1,0 +1,11 @@
+@keyframes move {
+    0%{
+        color: hotpink;
+        transform: translate(-50%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+        color: rgb(15, 15, 15);
+    }
+    
+}

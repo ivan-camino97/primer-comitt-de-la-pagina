@@ -1,0 +1,31 @@
+footer{
+    display: flex; flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(231, 231, 241);
+    background-color: rgb(255, 255, 255);
+    border-style: double;
+    margin-top: 5px;
+    background-color: rgb(24, 24, 24);
+    margin-bottom: 40px;
+    height: 100px;
+
+    h3{
+        color: maroon;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+
+    p{
+        color: #f9f3f3;
+        
+       }
+
+    }
+    .iconify{
+        color: #bb1818;
+    }
+    #cinta{
+        background-image: url(../images/cinta-fondo.png);
+        height: 30px;
+
+    }

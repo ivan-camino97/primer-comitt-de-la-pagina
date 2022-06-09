@@ -1,0 +1,12 @@
+main{
+    background-color: burlywood;
+    height: 1400px;
+    }
+    .subtitulo{
+        animation: move 2s infinite ease-in-out;
+        display: flex; flex-direction: row;
+        justify-content:center;
+        color: rgb(3, 3, 3);
+        font-size: 20px;
+        font-family:'Lobster',cursive
+    }

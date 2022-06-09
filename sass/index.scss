@@ -1,0 +1,13 @@
+@import './misc/normalize';
+@import './misc/animation';
+@import './misc/mediaquery';
+
+@import './pages.scss/home';
+@import './pages.scss/contacto';
+@import './pages.scss/nosotros';
+@import './pages.scss/productos';
+@import './pages.scss/sucursales';
+
+@import './partials/footer';
+@import './partials/header';
+@import './partials/main.scss';

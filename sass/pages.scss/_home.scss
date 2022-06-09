@@ -1,0 +1,38 @@
+
+.gc{
+    display: flex;
+    justify-content: center;
+
+}
+.grid__container{
+    height: 490px;
+    width: 516px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(153px, 1fr));
+    grid-auto-rows: minmax(163px, auto);
+    margin-bottom: 30px;
+    
+    gap: 1px;
+    
+    &__item{
+        display: flex;
+        font-size: 1.5rem;
+         border-radius: 4px;
+
+        &__item:nth-of-type(7){
+            width: 338px;
+            height: 161px;
+            grid-template-columns: 2 / 4;
+            grid-row: 3 / 4;
+        }
+        
+    
+    .wide{
+        grid-column: span 2;
+    }
+    .tall{
+        grid-row: span 2;
+    }
+}
+
+}
