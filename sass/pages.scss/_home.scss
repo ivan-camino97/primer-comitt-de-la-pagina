@@ -1,11 +1,10 @@
-
 .gc{
     display: flex;
     justify-content: center;
 
 
 .grid__container{
-    height: 680px;
+    height: 980px - $ancho;
     width: 560px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(153px, 1fr));
@@ -18,8 +17,12 @@
 
     .grid__item{
         display: flex;
-        font-size: var(--size-2);
+        font-size: 1.5em;
          border-radius: 4px;
+         &--cambios{
+             @extend .grid__item;
+             color: brown;
+         }
         }
          
 

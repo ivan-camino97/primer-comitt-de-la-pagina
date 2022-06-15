@@ -1565,19 +1565,19 @@ a.iif-filter--selected:focus:not(:hover) {
 /*
 .iif-icons-header-toggle {
 	position: relative;
-	padding: 0 ($iif-spacing / 2) ($iif-spacing / 2)
-		($iif-spacing + $iif-icons-header-modes-icon-size);
-	line-height: $iif-icons-header-modes-icon-size;
+	padding: 0 (--iif-spacing / 2) (--iif-spacing / 2)
+		(--iif-spacing + --iif-icons-header-modes-icon-size);
+	line-height: --iif-icons-header-modes-icon-size;
 
 	svg {
 		position: absolute;
-		left: ($iif-spacing / 2);
+		left: (--iif-spacing / 2);
 		top: 0;
-		font-size: $iif-icons-header-modes-icon-size;
+		font-size: --iif-icons-header-modes-icon-size;
 		line-height: 1em;
-		width: $iif-icons-header-modes-icon-size;
-		height: $iif-icons-header-modes-icon-size;
-		color: $iif-parent-icon-color;
+		width: --iif-icons-header-modes-icon-size;
+		height: --iif-icons-header-modes-icon-size;
+		color: --iif-parent-icon-color;
 		transition: top 0.2s ease;
 	}
 
@@ -1585,7 +1585,7 @@ a.iif-filter--selected:focus:not(:hover) {
 		text-decoration: none;
 		&:hover,
 		&:focus {
-			color: $iif-parent-link-hover-color;
+			color: --iif-parent-link-hover-color;
 			text-decoration: underline;
 			outline: none;
 			svg {
