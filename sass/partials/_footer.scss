@@ -11,8 +11,8 @@ footer{
 
     h3{
         color: maroon;
-        font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-size: var(--size-large);
+        font-family: var(--font-secondary);
     }
 
     p{
@@ -22,7 +22,7 @@ footer{
 
     }
     .iconify{
-        color: #bb1818;
+        color: var(--color-hover);
     }
     #cinta{
         background-image: url(../images/cinta-fondo.png);
