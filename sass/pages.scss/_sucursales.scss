@@ -1,15 +1,33 @@
+.subtitulo{
+    animation: move 2s infinite ease-in-out;
+    display: flex; flex-direction: row;
+    justify-content:center;
+    color: rgb(247, 249, 255);
+    font-size: 20px;
+    font-family: 'lobster',cursive;
+}
+.p{
+    display: flex;
+     justify-content: center;
+    border-bottom: 4px solid rgb(64, 153, 159);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 .negocios{
-    gap: 10px;
     display: flex;flex-direction: column;
-    justify-content: space-evenly
-    
-}
-.beccar{
-    display: flex; flex-direction: row;
     justify-content: center;
-}
-.sanisidro{
-    display: flex; flex-direction: row;
-    justify-content: center;
-    
+    align-items: center;
+    gap: 10px;
+    .beccar{
+        display: flex;flex-direction:row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .sanisidro{
+        display: flex;flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }

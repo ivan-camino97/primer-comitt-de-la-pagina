@@ -94,12 +94,12 @@ div {
       align-items: center; }
       #main .negocios .beccar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
       #main .negocios .sanisidro {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
     #main .cards {
@@ -198,12 +198,12 @@ div {
       align-items: center; }
       #main .negocios .beccar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
       #main .negocios .sanisidro {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
     #main .cards {
@@ -229,6 +229,11 @@ div {
         grid-column: 2 / 3;
         grid-row: 2 / 3; } }
 
+nav > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 .gc {
   display: flex;
   justify-content: center; }
@@ -252,6 +257,43 @@ div {
 
 .tall {
   grid-row: span 2; }
+
+a:hover {
+  color: var(--color-hover); }
+
+.subtitulo {
+  animation: move 2s infinite ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #f7f9ff;
+  font-size: 20px;
+  font-family: 'lobster',cursive; }
+
+.p {
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #40999f;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-sizing: border-box; }
+
+.subtitulo {
+  animation: move 2s infinite ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #f7f9ff;
+  font-size: 20px;
+  font-family: 'lobster',cursive; }
+
+.p {
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #40999f;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-sizing: border-box; }
 
 .cards {
   display: grid;
@@ -277,6 +319,15 @@ div {
     grid-column: 2 / 3;
     grid-row: 2 / 3; }
 
+.subtitulo {
+  animation: move 2s infinite ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #f7f9ff;
+  font-size: 20px;
+  font-family: 'lobster',cursive; }
+
 .p {
   display: flex;
   justify-content: center;
@@ -286,20 +337,21 @@ div {
   box-sizing: border-box; }
 
 .negocios {
-  gap: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
-
-.beccar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.sanisidro {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  gap: 10px; }
+  .negocios .beccar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .negocios .sanisidro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
 
 footer {
   display: flex;
@@ -335,50 +387,51 @@ footer {
 header {
   background-color: #181818;
   display: block; }
-
-*, ::after, ::before {
-  box-sizing: inherit; }
-
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  color: #f7f9ff;
-  text-decoration: none;
-  background-color: #0000004c;
-  list-style-type: none;
-  margin-bottom: 0%;
-  margin-block-start: none;
-  margin-block-end: none;
-  margin-inline-start: 0%;
-  margin-inline-end: 0%;
-  padding-inline-start: 0%;
-  padding-left: 0%; }
-  ul li {
-    display: flexbox;
-    text-align: none; }
-  ul a {
-    align-content: center;
-    color: #f8f8fd;
+  header nav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    header nav div .logo:hover {
+      transform: scale(1.2, 1.2);
+      transition: all 2s linear; }
+    header nav div h1 {
+      color: antiquewhite;
+      font-size: 2rem;
+      transition: all 3s linear;
+      border-bottom: 2px solid #f688e9;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+    header nav div h1:hover {
+      transform: scale(1.1, 1.1);
+      transition: all 3s linear;
+      color: #4d95ed; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #f7f9ff;
     text-decoration: none;
-    list-style-type: none; }
-
-h1 {
-  color: antiquewhite;
-  font-size: 2rem;
-  transition: all 3s linear;
-  border-bottom: 2px solid #f688e9;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
-
-h1:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 3s linear;
-  color: #4d95ed; }
-
-nav > div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+    background-color: #0000004c;
+    list-style-type: none;
+    margin-bottom: 0%;
+    margin-block-start: none;
+    margin-block-end: none;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+    padding-inline-start: 0%;
+    padding-left: 0%; }
+    header nav ul li {
+      display: flexbox;
+      text-align: none; }
+      header nav ul li a {
+        align-content: center;
+        color: #f8f8fd;
+        text-decoration: none;
+        list-style-type: none; }
+        header nav ul li a a:hover {
+          color: var(--color-hover); }
+  header *, header ::after, header ::before {
+    box-sizing: inherit; }
 
 #main {
   background-color: burlywood;

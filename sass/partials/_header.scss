@@ -2,56 +2,72 @@
     display: flex; flex-direction: row;
     justify-content: space-around;
 }
+
 header{
     background-color: $color-secondary;
     display: block;
+
+    nav{
+        div{
+            display: flex; flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .logo:hover{
+                transform: scale(1.2, 1.2);
+                transition: all 2s linear;
+            }
+            h1{
+                color: rgb(250, 235, 215);
+                font-size: $spacing-small;
+                transition: all 3s linear;
+                border-bottom: 2px solid rgb(246, 136, 233);
+                font-family: $font-title;
+                 }
+                 h1:hover{
+                    transform: scale(1.1, 1.1);
+                    transition: all 3s linear;
+                    color: #4d95ed;
+                 }
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            color: $color-primary;
+            text-decoration: none;
+            background-color: #0000004c;
+            list-style-type: none;
+            margin-bottom: 0%;
+            margin-block-start: none;
+            margin-block-end: none;
+            margin-inline-start: 0%;
+            margin-inline-end: 0%;
+            padding-inline-start: 0%;
+            padding-left: 0%;
+        
+            li{
+                display: flexbox;
+                text-align: none;
+                a{
+                    align-content: center;
+                    color: rgb(248, 248, 253);
+                    text-decoration: none;
+                    list-style-type: none;
+                
+                a:hover{
+                    color: var(--color-hover);
+                }
+                }
+            }
+
+
+    }
 
 }
 *, ::after, ::before {
     box-sizing: inherit;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: $color-primary;
-    text-decoration: none;
-    background-color: #0000004c;
-    list-style-type: none;
-    margin-bottom: 0%;
-    margin-block-start: none;
-    margin-block-end: none;
-    margin-inline-start: 0%;
-    margin-inline-end: 0%;
-    padding-inline-start: 0%;
-    padding-left: 0%;
-
-    li{
-        display: flexbox;
-        text-align: none;
-    }
-    
-    a{
-        align-content: center;
-        color: rgb(248, 248, 253);
-        text-decoration: none;
-        list-style-type: none;
-     }
 }
-h1{
-    color: rgb(250, 235, 215);
-    font-size: $spacing-small;
-    transition: all 3s linear;
-    border-bottom: 2px solid rgb(246, 136, 233);
-    font-family: $font-title;
-     }
-     h1:hover{
-        transform: scale(1.1, 1.1);
-        transition: all 3s linear;
-        color: #4d95ed;
-     }
-     nav> div{
-         @include flex(row, space-around, center)
-       
-    }
+
+

@@ -1,3 +1,19 @@
+.subtitulo{
+    animation: move 2s infinite ease-in-out;
+    display: flex; flex-direction: row;
+    justify-content:center;
+    color: rgb(247, 249, 255);
+    font-size: 20px;
+    font-family: 'lobster',cursive;
+}
+.p{
+    display: flex;
+     justify-content: center;
+    border-bottom: 4px solid rgb(64, 153, 159);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 .cards{
     display: grid;
     grid-template-columns:repeat(2,210px);
@@ -27,12 +43,4 @@
         grid-row: 2 / 3;
     }
 
-    }
-    .p{
-        display: flex;
-         justify-content: center;
-        border-bottom: 4px solid rgb(64, 153, 159);
-        margin-bottom: 10px;
-        border-radius: 5px;
-        box-sizing: border-box;
     }
