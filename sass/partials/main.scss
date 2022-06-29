@@ -1,11 +1,24 @@
 #main{
-    background-color: $color-main;
+    background-color: darkgrey;
     height: 1400px;
+
+    
 
     .ph{
         display: flex; flex-direction: column;
    justify-content: center;
    align-items: center;
+
+   .subtitulo--cambios{
+    animation: move 2s infinite ease-in-out;
+    display: flex; flex-direction: row;
+    justify-content:center;
+    color: rgb(247, 249, 255);
+    font-size: 20px;
+    font-family: 'lobster',cursive;
+    border: map-get($borders , one );
+
+   }
     
     .subtitulo{
         animation: move 2s infinite ease-in-out;
@@ -18,7 +31,7 @@
     }
     .encabezado{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color:rgb(251, 245, 245);
+        color:var($text-color);
         display: flex;flex-direction: row;
         justify-content: center;
         border: map-get($borders , two );

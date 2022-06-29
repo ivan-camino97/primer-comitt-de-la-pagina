@@ -1,3 +1,22 @@
 a:hover{
     color: var(--color-hover);
 }
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-content: center;
+    max-width: 800px;
+    border: double;
+    margin-top: 20px;
+    align-items: center;
+    .boton{
+        background-color: brown;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+    }
+     
+}

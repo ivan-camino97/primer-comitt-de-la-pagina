@@ -5,6 +5,8 @@ nav> div{
 .gc{
     display: flex;
     justify-content: center;
+    filter: grayscale(50%);
+    border-radius: 30px;
 
 
 .grid__container{
