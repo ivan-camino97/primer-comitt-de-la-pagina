@@ -4,7 +4,7 @@
 
     /*colors*/
     $color-primary: rgb(247, 249, 255);
-    $color-secondary: rgb(24, 24, 24);
+    $color-secondary: rgb(177, 169, 169);
     $text-color: rgba(6, 6, 6, 0.666);
     $color-hover: #bb1818;
     $color-main: burlywood;
@@ -24,6 +24,6 @@
     /*mapa*/
     $borders: (
         one: 1px solid red,
-        two: 2px dashed rgb(235, 235, 255),
+        two: 2px bottom rgb(235, 235, 255),
         three: 3px double green
       );

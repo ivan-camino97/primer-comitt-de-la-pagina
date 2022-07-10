@@ -2,6 +2,24 @@ nav> div{
     @include flex(row, space-around, center)
   
 }
+header ::after, header ::before {
+    box-sizing: none;
+}
+li {
+    display: flex; flex-direction: row;
+    justify-content: space-around;
+    text-align:center
+}
+ol ul{
+    padding-left: none;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
+.ph{
+    display: flex; flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 .gc{
     display: flex;
     justify-content: center;
@@ -39,4 +57,7 @@ nav> div{
 }
 .tall{
     grid-row: span 2;
+}
+.b{
+    margin-bottom: 2rem;
 }

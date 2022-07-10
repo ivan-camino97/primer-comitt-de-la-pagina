@@ -1,22 +1,17 @@
 #main{
-    background-color: darkgrey;
-    height: 1400px;
-
+    background-color: rgb(176, 203, 227);
+    height: 100%;
     
 
-    .ph{
-        display: flex; flex-direction: column;
-   justify-content: center;
-   align-items: center;
 
    .subtitulo--cambios{
     animation: move 2s infinite ease-in-out;
     display: flex; flex-direction: row;
     justify-content:center;
     color: rgb(247, 249, 255);
-    font-size: 20px;
-    font-family: 'lobster',cursive;
-    border: map-get($borders , one );
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-bottom: 2px solid rgb(247, 249, 255);
 
    }
     
@@ -25,16 +20,15 @@
         display: flex; flex-direction: row;
         justify-content:center;
         color: rgb(247, 249, 255);
-        font-size: 20px;
-        font-family: 'lobster',cursive;
-        border: map-get($borders , one );
+        font-size: 2em;
+        font-family: 'roboto condensed', sans-serif;
+        flex-wrap: wrap;
+        border-bottom: 2px solid rgb(247, 249, 255);
     }
-    .encabezado{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color:var($text-color);
+    .p{
+        font-family: 'Montserrat', sans-serif;
         display: flex;flex-direction: row;
         justify-content: center;
-        border: map-get($borders , two );
-    }
+        flex-wrap: wrap;
     }
     }

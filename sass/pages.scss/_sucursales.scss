@@ -4,7 +4,7 @@
     justify-content:center;
     color: rgb(247, 249, 255);
     font-size: 20px;
-    font-family: 'lobster',cursive;
+    font-family: 'roboto condensed', sans-serif;
 }
 .p{
     display: flex;
@@ -13,12 +13,18 @@
     margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
+    font-family: 'roboto mono', monospace;
 }
 .negocios{
     display: flex;flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    p{
+        font-family: 'oswald', sans-serif;
+    }
+
     .beccar{
         display: flex;flex-direction:row;
         justify-content: center;

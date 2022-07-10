@@ -18,10 +18,10 @@ header{
             }
             h1{
                 color: rgb(252, 249, 245);
-                font-size: helvetica;
+                font-size: 3em;
                 transition: all 3s linear;
                 border-bottom: 2px solid rgb(246, 136, 233);
-                font-family: $font-title;
+                font-family: 'Edu SA Beginner', cursive;
                  }
                  h1:hover{
                     transform: scale(1.1, 1.1);

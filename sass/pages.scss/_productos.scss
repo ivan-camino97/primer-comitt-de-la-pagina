@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns:repeat(2,210px);
     grid-template-rows:repeat(2,350px);
-    border-radius: 4px;
+    border-radius: 100%;
     justify-content: center;
     row-gap: 2px;
 
@@ -41,7 +41,291 @@
         display: grid;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        border-radius: 60px 40px;
+        border-radius: 100%;
     }
 
+    }
+    /*sandwiches de miga*/
+    .cont1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 3px solid rgb(64, 153, 159);
+
+    
+    .contenedor1{
+        margin: auto;
+        border-color: white;
+        width: 400px;
+        padding: 30px;
+        ul{
+            li{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+        }
+        ul.slider{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            li{
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                width: inherit;
+                height: inherit;
+                border-color: white;
+                transition: opacity .5s;
+                img{
+                    width: 100%;
+                    height: 350px;
+                    object-fit: cover;
+                    border-radius: 10%;
+                }
+            }
+            li:first-child{
+                opacity: 1;
+
+            }
+            li:target{
+                opacity: 1;
+
+            }
+        }
+        .home{
+            text-align: center;
+            margin: 20px;
+            li{
+                display: inline-block;
+                text-align: center;
+                a{
+                    display: inline-block;
+                    color: rgb(16, 15, 15);
+                    text-decoration: none;
+                    border-color: grey;
+                    padding: 10px;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    border-radius: 10%;
+                }
+            }
+        }
+    }
+    /*tortas*/
+    .contenedor2{
+        margin: auto;
+        border-color: white;
+        width: 450px;
+        padding: 30px;
+
+        ul{
+            li{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+            }
+        }
+        ul.slidera{
+            position: relative;
+            width: 450px;
+            height: 450px;
+
+            li{
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                width: inherit;
+                height: inherit;
+                border-color: white;
+                transition: opacity .5s;
+
+                img{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 10%;
+                }
+            }
+            li:first-child{
+                opacity: 1;
+
+            }
+            li:target{
+                opacity: 1;
+
+            }
+        }
+        .homex{
+            text-align: center;
+            margin: 20px;
+
+            li{
+                display: inline-block;
+                text-align: center;
+
+                a{
+                    display: inline-block;
+                    color: rgb(15, 15, 15);
+                    text-decoration: none;
+                    border-color: grey;
+                    padding: 10px;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    border-radius: 10%;
+                }
+            }
+
+        }
+    }
+    }
+    /*alfajores*/
+    .cont2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 3px solid rgb(64, 153, 159);
+
+    .contenedor3{
+        margin: auto;
+        border-color: white;
+        width: 450px;
+        padding: 30px;
+
+        ul{
+            li{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+            }
+        }
+        ul.sliderb{
+            position: relative;
+            width: 450px;
+            height: 450px;
+
+            li{
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                width: inherit;
+                height: inherit;
+                border-color: white;
+                transition: opacity .5s;
+
+                img{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 10%;
+                }
+            }
+            li:first-child{
+                opacity: 1;
+
+            }
+            li:target{
+                opacity: 1;
+
+            }
+        }
+        .homey{
+            text-align: center;
+            margin: 20px;
+
+            li{
+                display: inline-block;
+                text-align: center;
+
+                a{
+                    display: inline-block;
+                    color: rgb(247, 243, 243);
+                    text-decoration: none;
+                    border-color: grey;
+                    padding: 10px;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    border-radius: 10%;
+                }
+            }
+
+        }
+    }
+    /*facturas*/
+    .contenedor4{
+        margin: auto;
+        border-color: white;
+        width: 450px;
+        padding: 30px;
+
+        ul{
+            li{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+            }
+        }
+        ul.sliderc{
+            position: relative;
+            width: 450px;
+            height: 450px;
+
+            li{
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                width: inherit;
+                height: inherit;
+                border-color: white;
+                transition: opacity .5s;
+
+                img{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 10%;
+                }
+            }
+            li:first-child{
+                opacity: 1;
+
+            }
+            li:target{
+                opacity: 1;
+
+            }
+        }
+        .homez{
+            text-align: center;
+            margin: 20px;
+
+            li{
+                display: inline-block;
+                text-align: center;
+
+                a{
+                    display: inline-block;
+                    color: rgb(248, 242, 242);
+                    text-decoration: none;
+                    border-color: grey;
+                    padding: 10px;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    border-radius: 10%;
+                }
+            }
+
+        }
+    }
     }

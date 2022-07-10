@@ -14,3 +14,28 @@
     border-radius: 5px;
     box-sizing: border-box;
 }
+.descripcion{
+    display: flex; flex-direction: column;
+    justify-content: center;
+
+    span{
+        font-family: 'oswald', sans-serif;
+        font-size: 2em;
+    }
+
+    picture.nosotros{
+        display: flex; flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        .img1{
+            border-radius: 10%;
+            border: 3px solid white;
+
+        }
+        .img2{
+            border-radius: 10%;
+            border: 3px solid white;
+        }
+    }
+}
