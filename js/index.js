@@ -66,8 +66,11 @@ for(let i = 0; i <= 10; i++)
 }*/
 
 /*ejercico switch*/
-
+let facturas = 960
+let budines = 550
+let pan = 340
 let eleccionUsuario = prompt('Elija un producto entre: facturas, pan, budines').toLowerCase()
+const carrito = () => {
 
 do {
     switch (eleccionUsuario) {
@@ -83,9 +86,24 @@ do {
             alert('Elegiste budines, el valor es de $550.-')
             break;
 
+            case "budines y facturas":
+                alert( 'el valor de su compra es:'+ (facturas + budines))
+                break;
+
+            case "budines y pan":
+                alert('el valor de su compra es:'+ (budines + pan))
+                break;
+
+            case "facturas y pan":
+                alert('el valor de su compra es:'+ (facturas + pan))
+                break;
+
         default:
             alert('El producto seleccionado no se encuentra en stock, ingrese un producto de la lista')
             eleccionUsuario = prompt('Elija un producto entre: facturas, pan, budines').toLowerCase()
             break;
     }
-} while (eleccionUsuario != "facturas" && eleccionUsuario != "pan" && eleccionUsuario != "budines")
+} while (eleccionUsuario != "facturas" && eleccionUsuario != "pan" && eleccionUsuario != "budines" && eleccionUsuario != "budines y facturas" && eleccionUsuario != "budines y pan" && eleccionUsuario != "facturas y pan")
+
+}
+carrito()
