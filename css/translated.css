@@ -456,6 +456,19 @@ ol ul {
 .b {
   margin-bottom: 2rem; }
 
+.logoyt {
+  height: 4rem;
+  width: 7rem;
+  border-radius: 20px;
+  border-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .logoyt .triangle {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid white; }
+
 .encabezado {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.4em;
