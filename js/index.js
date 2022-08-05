@@ -163,8 +163,8 @@ panes2.mostrarunidad()/*metodos*/
         console.log('la unidad vale:' + this.unidad);
     }
 } */
-
-let carrito = []
+/*mi tp*/
+/*let carrito = []
 class Panes{
     constructor(tipo, kg, unidad,){
     this.tipo = tipo
@@ -227,6 +227,150 @@ const totalCarrito = () => {
    let sumaTotal = 0
    for(const producto of carrito){
        sumaTotal += producto.kg || producto.unidad
+   }
+   return sumaTotal
+}
+
+alert('gracias por su compra,el total es de $' + totalCarrito())*/
+/*function cadauno (array, funcion){
+    for (const elemento of array){
+        funcion(elemento)
+    }
+}*/
+/*function cadauno (array, funcion){
+    for (const elemento of array){
+        funcion(elemento)
+    }
+}*/
+/*for each(por cada uno)*/
+/*const apellido= ['camino', 'vazques', 'lopez', 'marino']
+
+apellido.forEach((apellido) => { 
+    let saludo = 'bienvenido ' + apellido + ',a la panaderia'
+    
+
+    if(apellido == 'lopez') {
+      saludo = 'hola profe ' + apellido + ',bienvenido al mejor'
+
+      
+    }
+    alert(saludo)
+})*/
+
+/*find(comparacion)*/
+/*const comida = [
+    { nombre: 'empanadas', tipo: 'carne', precio: 190},
+    { nombre: 'milanesa', tipo: 'napolitana', precio: 2900},
+    { nombre: 'pizza', tipo: 'vegana', precio: 2900},
+]
+
+const milanga = comida.find((comida) => comida.tipo == 'napolitana')
+console.log(milanga);
+
+/*FILTER: devuelve array con un objeto adentro(o mas que cumplan con la comparacion)*/
+
+//const pizanesa = comida.filter((comida) => comida.precio == 2900)
+//console.log(pizanesa);
+ /*SOME(devuelve true o false dependiendo si existe la condicion que ponemos)*/
+ //const comidapizza = comida.some((comida) => comida.tipo == 'vegana')
+ //console.log(comidapizza);
+/*map*/
+//const array1 = comida.map((comida) => comida.nombre)/*devuelve array con los nombres de los objetos*/
+//console.log(array1);
+
+//const array2 = comida.map((comida) => {
+  //  return{
+    //    nombre: comida.nombre,
+      //  precio: comida.precio * 2
+    //}
+//})
+//console.log(array2);/*devuelve return con el elemnto actualizado(se puede modificar)*/
+
+/*REDUCE(acumula el valor de los precios por vuelta, hasta llegar al total de los 3)*/
+//const preciototalcomida = comida.reduce((acumulador, comida) => acumulador + comida.precio, 0)
+//console.log(preciototalcomida);
+
+/*SORT (ordena de forma acendente o descendente(ej:nombre) un array,es destructivo*/
+//comida.sort((a, b) =>{
+  //  if(a.nombre > b.nombre){
+    //    return 1;
+    //}
+    //if( a.nombre < b.nombre){
+      //  return -1;
+    //}
+    //return 0;
+//})/*ordena en orden alfabetico,caso contrario cambiar los ><*/
+
+let carrito = []
+class Panes{
+    constructor(tipo, kg, unidad,){
+    this.tipo = tipo
+    this.kg = kg
+    this.unidad = unidad
+    }
+}
+const Panes1 = new Panes('manteca', 580, 35)
+const Panes2 = new Panes('frances', 400, 70,)
+const panes3 = new Panes('pebetes', 0, 90 )
+const panes4 = new Panes('molde salvado', 580, 580)
+const panes5 = new Panes('campo', 400, 350)
+const panes6 = new Panes('negros salvado', 580, 35)
+
+
+const eleccionProducto = () => {
+const eleccionUsuario = prompt('elegi el tipo de pan que desees')
+switch (eleccionUsuario) {
+    case 'manteca':
+        console.log('elegiste pan de manteca')
+        carrito.push(Panes1)
+        break;
+
+        case 'frances':
+        console.log('elegiste pan frances')
+        carrito.push(Panes2)
+            break;
+
+            case 'pebetes':
+        console.log('elegiste pebetes')
+        carrito.push(panes3)
+        break;
+
+        case 'molde salvado':
+        console.log('elegiste pan de molde de salvado')
+        carrito.push(panes4)
+        break;
+
+        case 'campo':
+        console.log('elegiste pan de campo')
+        carrito.push(panes5)
+        break;
+
+        case 'negro salvado':
+            console.log('elegiste pan negro de salvado')
+            carrito.push(panes6)
+        break;
+    default:
+        console.log('elegi un tipo de pan correcto')
+        break;
+}
+let rtausuario = prompt('desea llevar por unidad o por kg?')
+if(rtausuario == 'kg'){
+    rtausuario += eleccionUsuario * producto.kg
+
+}else if(rtausuario == 'unidad'){
+    rtausuario += eleccionUsuario * producto.unidad
+}
+if (confirm('desea agregar otro producto?')) {
+    eleccionProducto()
+}
+}
+eleccionProducto()
+
+
+const totalCarrito = () => {
+   let sumaTotal = 0
+   for(const producto of carrito){
+       sumaTotal += rtausuario
    }
    return sumaTotal
 }
