@@ -89,13 +89,5 @@ inputName.addEventListener('change', () =>{
 })
 
 
-const clickButton = document.querySelector('#clickbutton')
-console.log(clickButton)
-
-clickButton.addEventListener('click', (e) =>{
-    e.preventDefault()
-    console.log(e)
-})
-
 
 
