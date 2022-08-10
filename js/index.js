@@ -80,3 +80,22 @@ tituloss.forEach((title) => {
 title.InnerText = 'panaderia'
 })
 console.log(tituloss);
+
+const inputName = document.querySelector('#name')
+console.log(inputName)
+
+inputName.addEventListener('change', () =>{
+    console.log(inputName.value);
+})
+
+
+const clickButton = document.querySelector('#clickbutton')
+console.log(clickButton)
+
+clickButton.addEventListener('click', (e) =>{
+    e.preventDefault()
+    console.log(e)
+})
+
+
+
