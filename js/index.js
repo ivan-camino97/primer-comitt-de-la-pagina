@@ -1,4 +1,4 @@
-
+let form = []
 let carrito = []
 class Panes{
     constructor(tipo, kg, unidad,){
@@ -75,17 +75,18 @@ const totalCarrito = () => {
 
 alert('gracias por su compra,el total es de $' + totalCarrito())
 
-const tituloss = document.querySelectorAll('.tituloss')
-tituloss.forEach((title) => {
-title.InnerText = 'panaderia'
-})
-console.log(tituloss);
 
-const inputName = document.querySelector('#name')
-console.log(inputName)
+let inputName = document.getElementById('formulario')
 
-inputName.addEventListener('change', () =>{
-    console.log(inputName.value);
+
+inputName.addEventListener('submit', (event) =>{
+    event.preventDefault()
+
+    let username = document.getElementById('name').value
+    console.log(username);
+
+    let email = document.getElementById('email').value
+    console.log(email);
 })
 
 
