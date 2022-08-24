@@ -34,7 +34,7 @@ console.log(datodesession)
 sessionStorage.removeItem('datodesession')*/
 
 const input = document.querySelector('#name')
-const button = document.querySelector('#btn')
+const button = document.querySelector('#bttn')
 
 let lista = []
 
@@ -43,6 +43,13 @@ button.addEventListener('click', () =>{
     input.value = ''
     localStorage.setItem('lista', JSON.stringify(lista))
     console.log(lista);
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'forulario completado',
+        showConfirmButton: false,
+        timer: 1500
+      })
 })
 
 const listaguardada = JSON.parse(localStorage.getItem(lista)
