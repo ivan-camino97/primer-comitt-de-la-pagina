@@ -56,6 +56,10 @@ const listaguardada = JSON.parse(localStorage.getItem(lista)
 )
 console.log(listaguardada);
 
+fetch('https://pokeapi.co/api/v2/pokemon/25')
+.then((respuesta) => respuesta.json())
+.then((respuestaapi) => console.log(respuestaapi.name))
+
 /*const eleccionProducto = () => {
     const eleccionUsuario = prompt('elegi el tipo de alfajor deseado')
     switch (eleccionUsuario) {

@@ -51,6 +51,12 @@ const agregaralfajores = (e) => {
     const alnegro = alfajoridseleccionado == 002 && console.log('negro')
     carrito.push(alfajorseleccionado)
     console.log(carrito);
+    fetch('https://pokeapi.co/api/v2/pokemon/25')
+.then((respuesta) => respuesta.json())
+.then((respuestaapi) => {
+    const alfajorpokemon =  'el alfajor N°' + alfajoridseleccionado + 'le gusta a' + respuestaapi.name
+    carrito.push(alfajorpokemon)
+})
     
 }
 //eventlisteners
