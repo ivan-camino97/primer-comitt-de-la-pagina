@@ -1,18 +1,28 @@
-const { tipo, precio, imagen, id, descripcion } = Alfajores
 let carrito = []
 
 
 /*array de productos*/
 const allalfajor = [blanco, chocolate, maizena, santafesino]
 
-const arrayspread = [...allalfajor]
-console.log(arrayspread);
-
 
 /*selectores*/
 const contenedoralfajor = document.querySelector('#contenedoralfajor')
 
+const casilleroname = document.querySelector('.casilleroname')
+const casilleroprecio = document.querySelector('.casilleroprecio')
+const casillerocantidad = document.querySelector('.casillerocantidad')
 
+const casilleroname1 = document.querySelector('.casilleroname1')
+const casilleroprecio1 = document.querySelector('.casilleroprecio1')
+const casillerocantidad1 = document.querySelector('.casillerocantidad1')
+
+const casilleroname2 = document.querySelector('.casilleroname2')
+const casilleroprecio2 = document.querySelector('.casilleroprecio2')
+const casillerocantidad2 = document.querySelector('.casillerocantidad2')
+
+const casilleroname3 = document.querySelector('.casilleroname3')
+const casilleroprecio3 = document.querySelector('.casilleroprecio3')
+const casillerocantidad3 = document.querySelector('.casillerocantidad3')
 
 
 /*funciones*/
@@ -46,7 +56,7 @@ const buttonCarrito = document.querySelectorAll('.btn')
 
 const agregaralfajores = (e) => {
     const alfajoridseleccionado = e.target.getAttribute('data-id')
-    const alfajorseleccionado = allalfajor.find(({id}) => id == alfajoridseleccionado)
+    const alfajorseleccionado = allalfajor.find((Alfajor) => Alfajor.id == alfajoridseleccionado)
     const alblanco = alfajoridseleccionado == 001 && console.log('blanco')
     const alnegro = alfajoridseleccionado == 002 && console.log('negro')
     carrito.push(alfajorseleccionado)
@@ -56,6 +66,21 @@ const agregaralfajores = (e) => {
 .then((respuestaapi) => {
     const alfajorpokemon =  'el alfajor N°' + alfajoridseleccionado + 'le gusta a' + respuestaapi.name
     carrito.push(alfajorpokemon)
+
+    if (alfajoridseleccionado == 001){
+        casilleroname.textContent = blanco.tipo
+        casilleroprecio.textContent = blanco.precio
+    }else if (alfajoridseleccionado == 002){
+        casilleroname1.textContent = chocolate.tipo
+        casilleroprecio1.textContent = chocolate.precio
+    }else if (alfajoridseleccionado == 003){
+        casilleroname2.textContent = maizena.tipo
+        casilleroprecio2.textContent = maizena.precio
+    }else if (alfajoridseleccionado == 004){
+        casilleroname3.textContent = santafesino.tipo
+        casilleroprecio3.textContent = santafesino.precio
+    }
+
 })
     
 }

@@ -778,7 +778,7 @@ a:hover {
 
 .contenedor9 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center; }
   .contenedor9 .contenedor10 {
     display: flex;
@@ -793,6 +793,26 @@ a:hover {
     margin-top: 20px; }
     .contenedor9 .contenedor11 .art3 {
       margin-right: 5px; }
+
+#tabla {
+  display: flex;
+  justify-content: center; }
+  #tabla tbody {
+    border: 2px solid red; }
+    #tabla tbody tr th {
+      border: 1px solid black;
+      border-collapse: collapse; }
+    #tabla tbody tr td {
+      border: 1px solid black;
+      border-collapse: collapse; }
+
+.contbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; }
+  .contbutton .botontabla {
+    background-color: brown;
+    border: 2px solid black; }
 
 .subtitulo {
   animation: move 2s infinite ease-in-out;

@@ -104,4 +104,3 @@ fetch('https://pokeapi.co/api/v2/pokemon/25')
     }
     
     console.log('gracias por su compra,el total es de $' + totalCarrito());*/
-    
