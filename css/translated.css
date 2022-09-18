@@ -794,15 +794,15 @@ a:hover {
     .contenedor9 .contenedor11 .art3 {
       margin-right: 5px; }
 
-#tabla {
+#tabla-carrito {
   display: flex;
   justify-content: center; }
-  #tabla tbody {
+  #tabla-carrito tbody {
     border: 2px solid red; }
-    #tabla tbody tr th {
+    #tabla-carrito tbody .tr th {
       border: 1px solid black;
       border-collapse: collapse; }
-    #tabla tbody tr td {
+    #tabla-carrito tbody .tr .td {
       border: 1px solid black;
       border-collapse: collapse; }
 

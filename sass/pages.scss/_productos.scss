@@ -351,18 +351,18 @@
             
         }
     }
-    #tabla{
+    #tabla-carrito{
         display: flex; justify-content: center;
         tbody{
             border: 2px solid red;
 
-            tr{
+            .tr{
                 
                 th{
                     border: 1px solid black;
                     border-collapse: collapse;
                 }
-                td{
+                .td{
                     border: 1px solid black;
                     border-collapse: collapse;
                 }
